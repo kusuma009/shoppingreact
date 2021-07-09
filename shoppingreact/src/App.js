@@ -15,6 +15,7 @@ const App = () => {
                     <ul className="right">
                         <li><Link to="/">Shop</Link></li>
                         <li><Link to="/cart">My cart</Link></li>
+                        <li><Link to="/login">login</Link></li>
                     </ul>
                     </Router>
                 </div>
