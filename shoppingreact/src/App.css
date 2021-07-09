@@ -26,6 +26,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.button {
+  background-color:blue;
+  color:white;
+  border-radius:10px;
+  width:100px;
+  height:30px;
+}
+
 
 .App-link {
   color: #61dafb;
