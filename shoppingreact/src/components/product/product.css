@@ -1,0 +1,13 @@
+.product {
+    margin: 0;
+    overflow:visible;
+}
+
+.productprice {
+    display:inline-table;
+    line-height: 34px;
+}
+
+.product{
+    float: left;
+}
