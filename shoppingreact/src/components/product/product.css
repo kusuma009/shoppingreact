@@ -1,4 +1,4 @@
-.product {
+.productsName {
     margin: 0;
     overflow:visible;
 }
@@ -6,6 +6,9 @@
 .productprice {
     display:inline-table;
     line-height: 34px;
+}
+.productQuantity{
+    display: block;
 }
 
 .product{
