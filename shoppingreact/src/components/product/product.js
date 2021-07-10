@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './product.css'
+import './product.css';
 
 class Product extends Component {
     handleClick = () => {
@@ -42,10 +42,10 @@ product.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number,
+    quantity:PropTypes.number.isRequired,
     quantity:PropTypes.quantity,
     isInCart: PropTypes.bool.isRequired,
     addToCart: PropTypes.func.isRequired,
-    removeFromCart: PropTypes.func.isRequired,
+    removeFromCart: PropTypes.func.isRequired
 }
-
-export default product;
+export default Product;
