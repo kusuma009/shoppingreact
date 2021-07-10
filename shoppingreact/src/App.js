@@ -1,5 +1,8 @@
 import React from 'react';
 import {Link,Router,Route} from 'react-router-dom';
+import Navbar from './components/navbar';
+import Login from './components/login';
+import Product from './components/product/product';
 const App = () => {
     return (
         <div className="container">
@@ -9,15 +12,15 @@ const App = () => {
                 </div>
                 <nav className="nav-wrapper">
                 <div className="container">
-                  <Router>
-                    <Link to="/">Shopping</Link>
-                    
-                    <ul className="right">
-                        <li><Link to="/">Shop</Link></li>
-                        <li><Link to="/cart">My cart</Link></li>
-                        <li><Link to="/login">login</Link></li>
-                    </ul>
-                    </Router>
+                    <Switch>
+                        <Route exact path="/login" component="login"></Route>
+                        <Route exact path="/product" component="product"></Route>
+                        <Route exact path="/cart" component="cart"></Route>
+                        <Route path="/" component="home"></Route>
+                        
+                        
+
+                    </Switch>
                 </div>
             </nav>
                 </div>

@@ -18,6 +18,10 @@ import { connect } from 'react-redux';
                             <p>{item.desc}</p>
                             <p><b>Price: {item.price}$</b></p>
                         </div>
+                        <div className="card-content">
+                            <p>{item.desc}</p>
+                            <p><b>Quantity: {item.Quantity}$</b></p>
+                        </div>
                  </div>
 
             )
