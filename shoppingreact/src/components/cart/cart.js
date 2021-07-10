@@ -67,7 +67,7 @@ class Cart extends Component{
 const mapStateToProps = (state)=>{
     return{
         items: state.addedItems,
-        //addedItems: state.addedItems
+        
     }
 }
 const mapDispatchToProps = (dispatch)=>{
@@ -77,4 +77,4 @@ const mapDispatchToProps = (dispatch)=>{
         subtractQuantity: (id)=>{dispatch(subtractQuantity(id))}
     }
 }
-export default connect(mapStateToProps,mapDispatchToProps)(Cart)
+export default connect(mapStateToProps,mapDispatchToProps)(Cart);
