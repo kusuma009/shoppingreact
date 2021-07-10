@@ -12,7 +12,7 @@ class Cart extends Component{
     handleAddQuantity = (id)=>{
         this.props.addQuantity(id);
     }
-    //to substruct from the quantity
+    //to substract from the quantity
     handleSubtractQuantity = (id)=>{
         this.props.subtractQuantity(id);
     }
@@ -34,8 +34,8 @@ class Cart extends Component{
                                             <b>Quantity: {item.quantity}</b> 
                                         </p>
                                         <div className="add-remove">
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
+                                            <Link to="/cart"><i onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
+                                            <Link to="/cart"><i onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
                                         </div>
                                         <button className="btn btn-dark" onClick={()=>{this.handleRemove(item.id)}}>Remove</button>
                                     </div>
