@@ -14,7 +14,7 @@ class Product extends Component {
     }
 
     render() {
-        const { name, price,  isInCart } = this.props;
+        const { name, price,quantity,  isInCart } = this.props;
 
         return (
             <div className="productsName">
